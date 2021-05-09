@@ -16,6 +16,5 @@ else
 	printf "$iploc\n" | jq .
 fi
 echo -e "${red}${bold} Map:${reset}"
-
 location=$(echo $iploc | jq -r .loc)
 echo '{"bing": "https://duckduckgo.com/?q='$location'&t=ffab&ia=web&iaxm=maps","google": "http://maps.google.com/maps?q='$location'"}' | jq .
