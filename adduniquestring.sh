@@ -1,7 +1,7 @@
 #/bin/bash
 # smacked together by k404
-red="\e[0;91m"
-green="\e[0;92m"
+red="\e[31m"
+green="\e[32m"
 bold="\e[1m"
 reset="\e[0m"
 if [[ "$1" = "" || "$2" = "" ]]
@@ -14,7 +14,7 @@ else
       # check if string in file
       if [ ! -z $(grep "$1" "$2") ]
         then
-          echo -e "${red}${bold}Already in file!${reset}"
+          echo -e "${red}${bold}String already in file!${reset}"
         else
           echo "$1" >> "$2"
           echo -e "${green}${bold}Added new string!${reset}"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # smacked together by k404
 ipinfotoken=ipinfotoken
-red="\e[0;91m"
+red="\e[31m"
 bold="\e[1m"
 reset="\e[0m"
 if [ "$1" = "" ]
