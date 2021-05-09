@@ -1,4 +1,5 @@
 #!/bin/bash
+# smacked together by k404
 ipinfotoken=ipinfotoken
 red="\e[0;91m"
 bold="\e[1m"
